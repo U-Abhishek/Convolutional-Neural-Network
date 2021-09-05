@@ -8,7 +8,7 @@ This type of image classification is called semantic image segmentation. It's si
 As you might imagine, region-specific labeling is a pretty crucial consideration for self-driving cars, which require a pixel-perfect understanding of their environment so they can change lanes and avoid other cars, or any number of traffic obstacles that can put peoples' lives in danger.
 
 #### This notebok consists of:
-Build your own U-Net.
-Explain the difference between a regular CNN and a U-net.\
-Implement semantic image segmentation on the CARLA self-driving car dataset.[https://www.kaggle.com/kumaresanmanickavelu/lyft-udacity-challenge].\
-Apply sparse categorical crossentropy for pixelwise prediction.
+1. Build your own U-Net.\
+2. Explain the difference between a regular CNN and a U-net.\
+3. Implement semantic image segmentation on the CARLA self-driving car dataset.[https://www.kaggle.com/kumaresanmanickavelu/lyft-udacity-challenge].\
+4. Apply sparse categorical crossentropy for pixelwise prediction.
