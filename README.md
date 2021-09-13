@@ -34,4 +34,5 @@ Building a ResNet50 model to classify hand signs
 1) Implement the basic building blocks of ResNets in a deep neural network using Keras
 2) Put together these building blocks to implement and train a state-of-the-art neural network for image classification
 3) Implement a skip connection in your network
-
+## 4) Car detection with YOLO
+#### NOTEBOOK NAME: 
