@@ -20,7 +20,18 @@ Be using transfer learning on a pre-trained CNN to build an Alpaca/Not Alpaca cl
 
 A pre-trained model is a network that's already been trained on a large dataset and saved, which allows you to use it to customize your own model cheaply and efficiently. The one you'll be using, MobileNetV2, was designed to provide fast and computationally efficient performance. It's been pre-trained on ImageNet, a dataset containing over 14 million images and 1000 classes.
 
-- Create a dataset from a directory
-- Preprocess and augment data using the Sequential API
-- Adapt a pretrained model to new data and train a classifier using the Functional API and MobileNet
-- Fine-tune a classifier's final layers to improve accuracy 
+1) Create a dataset from a directory
+2) Preprocess and augment data using the Sequential API
+3) Adapt a pretrained model to new data and train a classifier using the Functional API and MobileNet
+4) Fine-tune a classifier's final layers to improve accuracy 
+
+## 3) Residual Networks
+#### NOTEBOOK NAME: Residual_Networks
+Building a very deep convolutional network, using Residual Networks (ResNets). In theory, very deep networks can represent very complex functions; but in practice, they are hard to train. Residual Networks, introduced by [He et al.](https://arxiv.org/pdf/1512.03385.pdf), allow you to train much deeper networks than were previously feasible.
+Building a ResNet50 model to classify hand signs
+![image](https://user-images.githubusercontent.com/86155658/133082755-78db5a37-4429-414f-8f2c-f88e25bc77cc.png)
+
+1) Implement the basic building blocks of ResNets in a deep neural network using Keras
+2) Put together these building blocks to implement and train a state-of-the-art neural network for image classification
+3) Implement a skip connection in your network
+
