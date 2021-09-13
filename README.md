@@ -12,3 +12,15 @@ As you might imagine, region-specific labeling is a pretty crucial consideration
 2. Explain the difference between a regular CNN and a U-net.
 3. Implement semantic image segmentation on the CARLA self-driving car dataset.[https://www.kaggle.com/kumaresanmanickavelu/lyft-udacity-challenge].
 4. Apply sparse categorical crossentropy for pixelwise prediction.
+
+## 2) Transfer Learning with MobileNetV2
+#### NOTEBOOK NAME: Transfer_learning_with_MobileNet_v2
+Be using transfer learning on a pre-trained CNN to build an Alpaca/Not Alpaca classifier!
+![image](https://user-images.githubusercontent.com/86155658/133078539-fe7ffc74-cab7-407b-b85d-deed6b0f64ed.png)
+
+A pre-trained model is a network that's already been trained on a large dataset and saved, which allows you to use it to customize your own model cheaply and efficiently. The one you'll be using, MobileNetV2, was designed to provide fast and computationally efficient performance. It's been pre-trained on ImageNet, a dataset containing over 14 million images and 1000 classes.
+
+- Create a dataset from a directory
+- Preprocess and augment data using the Sequential API
+- Adapt a pretrained model to new data and train a classifier using the Functional API and MobileNet
+- Fine-tune a classifier's final layers to improve accuracy 
