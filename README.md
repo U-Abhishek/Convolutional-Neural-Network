@@ -35,4 +35,14 @@ Building a ResNet50 model to classify hand signs
 2) Put together these building blocks to implement and train a state-of-the-art neural network for image classification
 3) Implement a skip connection in your network
 ## 4) Car detection with YOLO
-#### NOTEBOOK NAME: 
+#### FILE NAME: YOLO
+YOLO file contains implementation of YOLO algorithem.
+"You Only Look Once" (YOLO) is a popular algorithm because it achieves high accuracy while also being able to run in real time. This algorithm "only looks once" at the image in the sense that it requires only one forward propagation pass through the network to make predictions. After non-max suppression, it then outputs recognized objects together with the bounding boxes.
+![image](https://user-images.githubusercontent.com/86155658/133091576-146950ab-b505-49de-a203-beb0373c9b02.png)
+#### References
+
+The ideas presented in this notebook came primarily from the two YOLO papers. The implementation here also took significant inspiration and used many components from Allan Zelener's GitHub repository. The pre-trained weights used in this exercise came from the official YOLO website. 
+- Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi - [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640) (2015)
+- Joseph Redmon, Ali Farhadi - [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) (2016)
+- Allan Zelener - [YAD2K: Yet Another Darknet 2 Keras](https://github.com/allanzelener/YAD2K)
+- The official YOLO website (https://pjreddie.com/darknet/yolo/)
