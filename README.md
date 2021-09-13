@@ -1,4 +1,4 @@
-# Deep-Learning
+# Convolutional Neural Network
 ## 1) Image Segmentation using U-NET
 #### NOTEBOOK NAME: UNET_Implementation.ipynb
 Building your own U-Net, a type of CNN designed for quick, precise image segmentation, and using it to predict a label for every single pixel in an image - in this case, an image from a self-driving car dataset. 
@@ -14,7 +14,7 @@ As you might imagine, region-specific labeling is a pretty crucial consideration
 4. Apply sparse categorical crossentropy for pixelwise prediction.
 
 ## 2) Transfer Learning with MobileNetV2
-#### NOTEBOOK NAME: Transfer_learning_with_MobileNet_v2
+#### NOTEBOOK NAME: Transfer_learning_with_MobileNet_v2.ipynb
 Be using transfer learning on a pre-trained CNN to build an Alpaca/Not Alpaca classifier!
 ![image](https://user-images.githubusercontent.com/86155658/133078539-fe7ffc74-cab7-407b-b85d-deed6b0f64ed.png)
 
@@ -26,7 +26,7 @@ A pre-trained model is a network that's already been trained on a large dataset 
 4) Fine-tune a classifier's final layers to improve accuracy 
 
 ## 3) Residual Networks
-#### NOTEBOOK NAME: Residual_Networks
+#### NOTEBOOK NAME: Residual_Networks.ipynb
 Building a very deep convolutional network, using Residual Networks (ResNets). In theory, very deep networks can represent very complex functions; but in practice, they are hard to train. Residual Networks, introduced by [He et al.](https://arxiv.org/pdf/1512.03385.pdf), allow you to train much deeper networks than were previously feasible.
 Building a ResNet50 model to classify hand signs
 ![image](https://user-images.githubusercontent.com/86155658/133082755-78db5a37-4429-414f-8f2c-f88e25bc77cc.png)
@@ -42,7 +42,40 @@ YOLO file contains implementation of YOLO algorithem.
 #### References
 
 The ideas presented in this notebook came primarily from the two YOLO papers. The implementation here also took significant inspiration and used many components from Allan Zelener's GitHub repository. The pre-trained weights used in this exercise came from the official YOLO website. 
-- Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi - [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640) (2015)
-- Joseph Redmon, Ali Farhadi - [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) (2016)
-- Allan Zelener - [YAD2K: Yet Another Darknet 2 Keras](https://github.com/allanzelener/YAD2K)
-- The official YOLO website (https://pjreddie.com/darknet/yolo/)
+1) Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi - [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640) (2015)
+2) Joseph Redmon, Ali Farhadi - [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) (2016)
+3) Allan Zelener - [YAD2K: Yet Another Darknet 2 Keras](https://github.com/allanzelener/YAD2K)
+4) The official YOLO website (https://pjreddie.com/darknet/yolo/)
+
+## 5) Face Recognition
+#### NOTEBOOK NAME: Face_Recognition_.ipynb
+Building a face recognition system. Many of the ideas presented here are from [FaceNet](https://arxiv.org/pdf/1503.03832.pdf). In the lecture, you also encountered [DeepFace](https://research.fb.com/wp-content/uploads/2016/11/deepface-closing-the-gap-to-human-level-performance-in-face-verification.pdf).
+
+Face recognition problems commonly fall into one of two categories: 
+
+**Face Verification** "Is this the claimed person?" For example, at some airports, you can pass through customs by letting a system scan your passport and then verifying that you (the person carrying the passport) are the correct person. A mobile phone that unlocks using your face is also using face verification. This is a 1:1 matching problem.
+
+**Face Recognition** "Who is this person?" For example, the video lecture showed a [face recognition video](https://www.youtube.com/watch?v=wr4rx0Spihs) of Baidu employees entering the office without needing to otherwise identify themselves. This is a 1:K matching problem.
+
+FaceNet learns a neural network that encodes a face image into a vector of 128 numbers. By comparing two such vectors, you can then determine if two pictures are of the same person.
+
+* Differentiate between face recognition and face verification
+* Implement one-shot learning to solve a face recognition problem
+* Apply the triplet loss function to learn a network's parameters in the context of face recognition
+* Explain how to pose face recognition as a binary classification problem
+* Map face images into 128-dimensional encodings using a pretrained model
+* Perform face verification and face recognition with these encodings
+![image](https://user-images.githubusercontent.com/86155658/133096738-d788fe84-e88e-4897-a535-0ab735d2ff91.png)
+
+
+#### References
+1. Florian Schroff, Dmitry Kalenichenko, James Philbin (2015). [FaceNet: A Unified Embedding for Face Recognition and Clustering](https://arxiv.org/pdf/1503.03832.pdf)
+
+2. Yaniv Taigman, Ming Yang, Marc'Aurelio Ranzato, Lior Wolf (2014). [DeepFace: Closing the gap to human-level performance in face verification](https://research.fb.com/wp-content/uploads/2016/11/deepface-closing-the-gap-to-human-level-performance-in-face-verification.pdf)
+
+3. This implementation also took a lot of inspiration from the official FaceNet github repository: https://github.com/davidsandberg/facenet
+
+4. Further inspiration was found here: https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/
+
+5. And here: https://github.com/nyoki-mtl/keras-facenet/blob/master/notebook/tf_to_keras.ipynb
+
